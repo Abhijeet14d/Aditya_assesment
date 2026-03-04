@@ -1,4 +1,4 @@
-﻿function initIndustriesCarousel() {
+function initIndustriesCarousel() {
   const track = document.getElementById('industriesTrack');
   const prevBtn = document.getElementById('indPrev');
   const nextBtn = document.getElementById('indNext');

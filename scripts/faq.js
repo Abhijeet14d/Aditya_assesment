@@ -1,4 +1,4 @@
-﻿function initFAQAccordion() {
+function initFAQAccordion() {
   const faqItems = document.querySelectorAll('.faq-item');
   if (!faqItems.length) return;
 

@@ -1,4 +1,4 @@
-﻿function initHeroCarousel() {
+function initHeroCarousel() {
   const thumbs = document.querySelectorAll('#carouselThumbs .thumb');
   const mainImage = document.getElementById('mainImage');
   const zoomPreviewImg = document.getElementById('zoomPreviewImg');
@@ -8,7 +8,7 @@
   if (!thumbs.length || !mainImage) return;
 
   const images = Array(6).fill({
-    main: 'assets/landing-image.png',
+    main: 'assets/fishnet-landing.png',
     zoom: 'assets/landing-image.png'
   });
 

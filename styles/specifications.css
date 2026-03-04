@@ -1,0 +1,137 @@
+/* --- Technical Specifications --- */
+
+.specifications {
+  padding: 100px 20px;
+  background: var(--Colors-Secondary-500-main, #111827);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  overflow: hidden;
+}
+
+.spec-container {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.spec-header {
+  width: 100%;
+  max-width: 800px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.spec-header .spec-title {
+  margin: 0;
+  color: white;
+  font-size: 48px;
+  font-family: 'Urbanist', -apple-system, sans-serif;
+  font-weight: 700;
+  line-height: 57.60px;
+  word-wrap: break-word;
+}
+
+.spec-header .spec-title span {
+  color: white;
+}
+
+.spec-header .spec-subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 28.80px;
+  word-wrap: break-word;
+}
+
+.spec-table-container {
+  width: 100%;
+  max-width: 1240px;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(27, 28, 29, 0.04);
+  border-radius: 12px;
+  outline: 1.25px solid #374151;
+  outline-offset: -1.25px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.spec-col {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.spec-th {
+  padding: 12px 24px;
+  background: #374151;
+  color: white;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+  border-bottom: 1px solid #374151;
+}
+
+.spec-row {
+  padding: 16px 24px;
+  background: #1F2937;
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+  border-bottom: 1px solid #374151;
+}
+
+.spec-row:last-child {
+  border-bottom: none;
+}
+
+.spec-value {
+  font-weight: 400;
+}
+
+.spec-country {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spec-download-btn {
+  height: 52px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  outline: 1px solid white;
+  outline-offset: -1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background: transparent;
+  transition: opacity 0.2s ease;
+}
+
+.spec-download-btn:hover {
+  opacity: 0.8;
+}
+
+.spec-download-btn span {
+  color: white;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}

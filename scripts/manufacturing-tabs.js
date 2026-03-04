@@ -1,4 +1,4 @@
-﻿function initManufacturingTabs() {
+function initManufacturingTabs() {
   const tabs = document.querySelectorAll('.mfg-tab');
   const panels = document.querySelectorAll('.mfg-panel');
   if (!tabs.length || !panels.length) return;

@@ -1,4 +1,4 @@
-﻿/* --- Tablet (< 1024px) --- */
+/* --- Tablet (< 1024px) --- */
 @media (max-width: 1024px) {
   .hero-grid {
     gap: 32px;

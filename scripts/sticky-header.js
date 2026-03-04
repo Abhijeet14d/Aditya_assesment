@@ -1,4 +1,4 @@
-﻿function initStickyHeader() {
+function initStickyHeader() {
   const stickyHeader = document.getElementById('stickyHeader');
   const hero = document.getElementById('hero');
   if (!stickyHeader || !hero) return;

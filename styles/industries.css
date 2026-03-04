@@ -1,0 +1,179 @@
+/* --- Industries Section --- */
+
+.industries-section {
+  padding: 100px 0;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid #E1E3E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;
+}
+
+.industries-bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  object-fit: cover;
+  opacity: 0.30;
+  pointer-events: none;
+}
+
+.industries-container {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  position: relative;
+  z-index: 1;
+}
+
+.industries-header-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.industries-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.industries-title {
+  max-width: 800px;
+  color: #0D0D0D;
+  font-size: 44px;
+  font-family: 'Vert Grotesk Display', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.industries-subtitle {
+  max-width: 800px;
+  color: #4D545C;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.industries-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.ind-arrow {
+  width: 68px;
+  height: 68px;
+  background: white;
+  box-shadow: 0px 2px 4px rgba(27, 28, 29, 0.04);
+  border-radius: 50%;
+  border: 1px solid #CFD1D4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ind-arrow:hover {
+  background: #f8f9fa;
+}
+
+.ind-arrow img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.industries-carousel-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.industries-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  align-items: center;
+  width: 100%;
+  scrollbar-width: none;
+}
+
+.industries-track::-webkit-scrollbar {
+  display: none;
+}
+
+.industry-card {
+  flex: 0 0 420px;
+  width: 420px;
+  height: 420px;
+  padding: 32px 24px;
+  position: relative;
+  background: white;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.industry-img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.industry-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.industry-overlay-grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.58) 40%, rgba(0,0,0,0.8) 76%);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.industry-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.industry-card-title {
+  color: white;
+  font-size: 26px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.industry-card-desc {
+  max-width: 350px;
+  color: white;
+  opacity: 0.80;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}

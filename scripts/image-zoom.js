@@ -1,4 +1,4 @@
-﻿function initImageZoom() {
+function initImageZoom() {
   const container = document.getElementById('zoomContainer');
   const mainImage = document.getElementById('mainImage');
   const zoomPreview = document.getElementById('zoomPreview');

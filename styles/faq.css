@@ -1,0 +1,224 @@
+/* --- FAQ Section --- */
+
+.faq-section {
+  position: relative;
+  padding: 100px 20px;
+  background: white;
+  border-bottom: 1px solid #E1E3E8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  overflow: hidden;
+}
+
+.faq-bg-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1600px;
+  height: 924px;
+  opacity: 0.20;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.faq-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.faq-title {
+  margin: 0;
+  color: #111827;
+  font-size: 44px;
+  font-family: 'Urbanist', -apple-system, sans-serif;
+  font-weight: 700;
+  line-height: 52.80px;
+  word-wrap: break-word;
+}
+
+.faq-title-highlight {
+  color: #2B3990;
+}
+
+.faq-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  outline: 1px solid #E1E3E8;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-question-text {
+  color: black;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.faq-chevron-wrapper {
+  padding: 3px;
+  background: #F1F2F3;
+  border-radius: 37.50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform var(--transition-base), background var(--transition-fast);
+}
+
+.faq-item:first-child .faq-chevron-wrapper {
+  background: #FFF1F2;
+}
+
+.faq-item:first-child .faq-chevron-wrapper svg path {
+  stroke: #2B3990;
+}
+
+.faq-question[aria-expanded="true"] .faq-chevron-wrapper {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-slow), padding var(--transition-slow);
+}
+
+.faq-answer p {
+  color: #535A61;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+/* --- Catalogue CTA --- */
+.faq-catalogue {
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+  background: #F7F8F9;
+  box-shadow: 0px 2px 4px rgba(27, 28, 29, 0.04);
+  border-radius: 10px;
+  outline: 1px solid #CFD1D4;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.catalogue-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.catalogue-text h3 {
+  color: #0D0D0D;
+  font-size: 26px;
+  font-family: 'Urbanist', -apple-system, sans-serif;
+  font-weight: 600;
+  line-height: 31.20px;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.catalogue-text p {
+  opacity: 0.80;
+  color: #262A2E;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.catalogue-form {
+  flex: 1 1 0;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.catalogue-input-wrapper {
+  width: 100%;
+  padding: 10px 12px;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(10, 13, 20, 0.03);
+  border-radius: 8px;
+  outline: 1px solid #E1E3E8;
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+}
+
+.catalogue-input-wrapper input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #959BA4;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  outline: none;
+}
+
+.catalogue-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: #2B3990;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.catalogue-btn:hover {
+  opacity: 0.9;
+}

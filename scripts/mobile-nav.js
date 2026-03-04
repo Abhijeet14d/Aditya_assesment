@@ -1,4 +1,4 @@
-﻿function initMobileNav() {
+function initMobileNav() {
   const hamburgers = document.querySelectorAll('.hamburger');
   const overlay = document.getElementById('mobileNavOverlay');
   if (hamburgers.length === 0 || !overlay) return;

@@ -1,4 +1,4 @@
-﻿function initTestimonialsCarousel() {
+function initTestimonialsCarousel() {
   const track = document.getElementById('testimonialsTrack');
   const dots = document.querySelectorAll('#testimonialsDots .dot');
   if (!track || !dots.length) return;

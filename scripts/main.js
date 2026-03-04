@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initHeroCarousel();
   initImageZoom();
@@ -7,4 +7,11 @@
   initTestimonialsCarousel();
   initIndustriesCarousel();
   initMobileNav();
+  initForms();
 });
+
+function initForms() {
+  document.querySelectorAll('.catalogue-form, .quote-form').forEach(form => {
+    form.addEventListener('submit', (e) => e.preventDefault());
+  });
+}
