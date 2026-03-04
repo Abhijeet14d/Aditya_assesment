@@ -1,0 +1,425 @@
+﻿/* --- Tablet (< 1024px) --- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    gap: 32px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .features-grid {
+    gap: 24px;
+  }
+  
+  .features-row {
+    flex-wrap: wrap;
+  }
+
+  .testimonials {
+    padding: 60px var(--container-padding);
+  }
+
+  .testimonials-inner {
+    gap: 40px;
+  }
+
+  .testimonials-title {
+    font-size: 36px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 360px;
+  }
+
+  .portfolio {
+    padding: 60px var(--container-padding);
+  }
+
+  .portfolio-inner {
+    gap: 40px;
+  }
+
+  .portfolio-title {
+    font-size: 36px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-card h3 {
+    font-size: 22px;
+  }
+
+  .portfolio-cta-text h3 {
+    font-size: 22px;
+  }
+
+  .resources-inner {
+    gap: 40px;
+  }
+
+  .resources-title {
+    font-size: 36px;
+  }
+
+  .manufacturing {
+    padding: 60px var(--container-padding);
+    gap: 40px;
+  }
+
+  .manufacturing-inner {
+    gap: 40px;
+  }
+
+  .manufacturing-title {
+    font-size: 36px;
+  }
+
+  .manufacturing-card {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .mfg-tabs {
+    flex-wrap: nowrap;
+  }
+
+  .mfg-tab {
+    flex: 0 0 auto;
+  }
+
+  .mfg-panel-grid {
+    gap: 28px;
+  }
+
+  .quote-content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .quote-form-card {
+    width: 100%;
+  }
+
+  .quote-title {
+    font-size: 40px;
+  }
+
+  .footer-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-banner-text {
+    max-width: 100%;
+  }
+
+  /* Hide zoom preview on tablet (touch devices) */
+  .zoom-preview {
+    display: none;
+  }
+}
+
+/* --- Large tablet / small desktop (< 900px) --- */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .carousel-main {
+    flex-direction: column;
+  }
+
+  .mfg-panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mfg-tabs-wrapper::before {
+    left: 20px;
+    right: 20px;
+  }
+
+  .quote-container {
+    padding: 32px 24px;
+    border-radius: 24px;
+  }
+}
+
+/* --- Tablet portrait (< 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+    --container-padding: 16px;
+  }
+
+  .main-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .sticky-header .main-nav,
+  .sticky-header .header-cta {
+    display: none;
+  }
+
+  .sticky-header .hamburger {
+    display: flex;
+  }
+
+  .hero {
+    padding: 24px 0 32px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .price-value {
+    font-size: 20px;
+  }
+
+  .features-grid {
+    gap: 16px;
+  }
+  
+  .features-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .feature-card {
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .manufacturing {
+    padding: 48px var(--container-padding);
+    gap: 32px;
+  }
+
+  .manufacturing-inner {
+    gap: 32px;
+  }
+
+  .manufacturing-title {
+    font-size: 30px;
+  }
+
+  .resources {
+    padding: 48px 0;
+  }
+
+  .resources-inner {
+    gap: 32px;
+  }
+
+  .resources-title {
+    font-size: 30px;
+  }
+
+  .quote-section {
+    padding: 48px var(--container-padding);
+  }
+
+  .quote-container {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  .quote-title {
+    font-size: 32px;
+  }
+
+  .quote-form-card {
+    padding: 24px;
+  }
+
+  .manufacturing-card {
+    padding: 20px;
+    gap: 20px;
+    border-radius: 16px;
+  }
+
+  .mfg-tabs {
+    gap: 8px;
+  }
+
+  .mfg-tab {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .mfg-panel-grid {
+    gap: 20px;
+  }
+
+  .mfg-panel-content h3 {
+    font-size: 22px;
+  }
+
+  .mfg-panel-content p {
+    font-size: 16px;
+  }
+
+  .testimonials {
+    padding: 48px var(--container-padding);
+  }
+
+  .testimonials-title {
+    font-size: 30px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 300px;
+    padding: 24px;
+    gap: 28px;
+  }
+
+  .testimonial-card .testimonial-title {
+    font-size: 20px;
+  }
+
+  .portfolio {
+    padding: 48px var(--container-padding);
+  }
+
+  .portfolio-title {
+    font-size: 30px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-cta-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .portfolio-cta-btn {
+    width: 100%;
+  }
+
+  .resource-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-main {
+    padding: 60px 0;
+  }
+
+  .footer-links-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-legal {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .industry-card {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 340px;
+  }
+
+  .industries-section {
+    padding: 60px 16px;
+    gap: 32px;
+  }
+
+  .industries-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .industries-nav {
+    align-self: flex-end;
+  }
+
+  .faq-catalogue {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .catalogue-form {
+    min-width: unset;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* --- Mobile (< 480px) --- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .thumb {
+    width: 56px;
+    height: 42px;
+  }
+
+  /* Reset table container to scroll horizontally on small screens */
+  .spec-container {
+    overflow-x: auto;
+  }
+  .spec-table-container {
+    min-width: 700px;
+  }
+  
+  .spec-row, .spec-th {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .manufacturing {
+    padding: 40px var(--container-padding);
+  }
+
+  .manufacturing-title {
+    font-size: 26px;
+  }
+
+  .manufacturing-card {
+    padding: 16px;
+    gap: 16px;
+    border-radius: 12px;
+  }
+
+  .mfg-panel-content h3 {
+    font-size: 18px;
+  }
+
+  .mfg-panel-image img {
+    height: 220px;
+  }
+
+}
+
+
